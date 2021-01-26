@@ -1,0 +1,58 @@
+:root {
+	--main-yellow: #EAC926;
+	--dark-blue:#03264C;
+	--light-blue:#1259c3;
+	--dark-grey:#666;
+	--light-grey:#ebebeb;
+	--plain-white: white;
+	--green: #39b54a;
+	--body-size: 12px;
+	--heading-size: 12px;
+	--price-size: 18px;
+	--discount-size: 16px;
+	--description-size:16px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: var(--body-size);
+	background-color: var(--light-grey);
+}
+
+/*Home banner styles */
+
+.homebanner {
+	width: 100%;
+}
+
+main {
+	margin: 0 auto;
+	width: 60%;
+  }
+
+/*Last seen section */
+
+.visited {
+	width: 90%;
+}
+
+.visited h3 {
+	color:var(--dark-grey);
+	
+}
+
+.product-img {
+	width: 100%;
+}
+
+.truck-icon {
+	font-size: 16px;
+	padding: 5px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #39b54a;
+	background-color: var(--plain-white);
+	border-radius: 50%;
+	color: var(--green);
+}
+
