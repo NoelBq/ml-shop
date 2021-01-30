@@ -1,3 +1,18 @@
+:root {
+	--main-yellow: #EAC926;
+	--dark-blue:#03264C;
+	--light-blue:#1259c3;
+	--dark-grey:#666;
+	--light-grey:#ebebeb;
+	--plain-white: white;
+	--green: #39b54a;
+	--body-size: 12px;
+	--heading-size: 12px;
+	--price-size: 18px;
+	--discount-size: 16px;
+	--description-size:16px;
+  }
+
 header {
 	background-color: var(--main-yellow);
 	color: var(--dark-blue);
@@ -32,6 +47,10 @@ header {
 	padding: 7px;
 	border-radius:3px;
 	background-color: var(--plain-white);
+}
+
+.search form {
+	display: flex
 }
 
 .search input {
@@ -200,5 +219,19 @@ header {
 	.search-input {
 		height: 20px;
 	}
+}
 
+@media (min-width: 1200px) {
+
+	.topheader {
+		margin-top: 15px;
+		margin-bottom: 0;
+	}
+
+	.topheader span {
+		font-size: var(--description-size);
+	}
+	.search {
+		width: 30%;
+	}
 }

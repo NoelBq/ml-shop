@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="/css/normalize.css">
@@ -23,8 +23,10 @@
                         <img class="logo" src="/img/logo-mercado-liebre.svg" alt="Podcastslogo">
                     </div>
                     <div class="search">
-                        <input class="search-input" type="text" placeholder="Buscá productos, marcas">
-                        <i class="search-icon fas fa-search"></i>
+                        <form action="#" method="POST">
+                            <input class="search-input" type="text" placeholder="Buscá productos, marcas">
+                            <i class="search-icon fas fa-search"></i>
+                        </form>
                     </div>
                 </div>
                 <div class="bottomheader">
@@ -53,33 +55,75 @@
         </nav>
     </header>
     <main>
-      <section>
-        <div class="container">
-            <h1>Completá tus datos</h1>
-            <div class="contact-form">
-                <form id="contact" method="get" action="#">
-                        <div class="line">
+        <section>
+            <div class="container">
+                <h1>Completá tus datos</h1>
+                <div class="contact-form">
+                    <form class="contact" method="GET" action="/">
+                        <div class="name-section">
+                            <div class="line">
                                 <label for="name"></label>
-                                <input class="input" type="text" name="name" id="name" placeholder="Nombre y Apellido">
+                                <input class="input" type="text" name="name" id="name" placeholder="Nombre" required/>
+                                <span class="feedback">Revisá tu nombre</span>
+                            </div>
+                            <div class="line">
+                                <label for="lastname"></label>
+                                <input class="input" type="text" name="lastname" id="lastname" placeholder="Apellido" required/>
+                                <span class="feedback">Revisá tu Apellido</span>
+                            </div>
                         </div>
-                        <!-- <div class="line">
-                                <label for="email">e-Mail: </label>
-                                <input type="email" name="email" id="email">
-                        </div>
-        
                         <div class="line">
-                                <label for="message">Message: </label>
-                                <textarea name="message" id="message" rows="3" cols="10"></textarea>
+                            <label for="address"></label>
+                            <input class="input" type="text" name="address" id="address" placeholder="Direccion" required>
+                            <span class="feedback">Revisá tu domicilio</span>
                         </div>
-         -->
-                        <div class="line">
-                                <input type="submit" name="submit" value="Submit" class="button">
+                        <div class="bday-line liner">
+                            <label for="date">Fecha de Nacimiento</label>
+                            <input class="bday-box" name="birthdate" type="date" required>
                         </div>
-                </form>
-
+                        <div class="user-line liner">
+                            <label for="profile">Perfil de Usuario</label>
+                            <div class="profile-radios">
+                                <input type="radio" name="userprofile" value="sell">Comprar</input>
+                                <input type="radio" name="userprofile" value="buy">Vender</input>
+                            </div>
+                        </div>
+                        <div class="options liner">
+                            <label for="electro" class="checkbox">Electro</label>
+                            <input type="checkbox" name="electro">
+                             <label for="fashion" class="checkbox">Moda</label>
+                            <input type="checkbox" name="fashion">
+                            <label for="home" class="checkbox">Hogar</label>
+                            <input type="checkbox" name="home">
+                            <label for="toys" class="checkbox">Juguetería</label>
+                            <input type="checkbox" name="toys">
+                        </div>
+                        <div class="file-container liner">  
+                            <div class="file-uploader">
+                                <label for="file-input"><i class="fas fa-user-plus"></i>Subi tu foto</label>
+                                <input id="file-input" type="file" accept="image/png, image/jpeg"/>
+                            </div>
+                        </div>
+                        <div class="pass-container">
+                            <div class="liner">
+                                <label for="pwd"></label>
+                                <input type="password" id="pwd" name="password" placeholder="Contraseña" required/>
+                                <span class="feedback">Revisá tu Contraseña</span>
+                            </div>
+                            <div class="liner">
+                                <label for="pwdconfirmed"></label>
+                                <input type="password" id="pwd-cnf" name="password-confirmed" placeholder=" Confirmar Contraseña" required>
+                                <span class="feedback">Revisá tu Contraseña</span>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <input type="submit" name="submit" value="Enviar" class="btn send-btn"/>
+                            <input type="reset" name="reset" value="Borrar" class="btn reset-btn"/>
+                        </div>
+                    </form>
+                </div>
             </div>
-    </div>
-      </section>
+        </section>
     </main>
 </body>
 </html>
