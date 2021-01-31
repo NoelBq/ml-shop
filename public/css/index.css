@@ -163,8 +163,13 @@ main {
 	}
 	
 	.product .product-background {
-		box-shadow: 0px 0px 10px rgb(100, 100, 100);
+		box-shadow: 0px 0px 5px rgb(100, 100, 100);
 	}
+
+	.product .product-background:hover {
+		box-shadow: 0px 0px 20px rgb(100, 100, 100);
+	}
+
 }
 
 @media (min-width: 1200px) {
