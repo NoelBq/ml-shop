@@ -19,6 +19,10 @@ body {
   font-size: var(--body-size);
 }
 
+main {
+  background-color: var(--plain-white);
+}
+
 input {
   background: transparent;
   border: none;
@@ -53,7 +57,6 @@ input:focus {
 
 .container h1 {
   margin: 30px 10px;
-  color: var(--dark-grey);
   align-self: center;
 }
 
@@ -76,6 +79,12 @@ input:focus {
 }
 
 .line input:hover {
+  border-bottom: 2px solid;
+  border-color: var(--light-blue);
+}
+
+.liner:hover {
+  border-bottom: 2px solid;
   border-color: var(--light-blue);
 }
 
@@ -118,7 +127,6 @@ input:focus {
 
 .bday-line label {
   font-size:var(--description-size);
-  color: var(--dark-grey);
   width: 100%;
 }
 
@@ -148,18 +156,16 @@ input[type="radio"]{margin:0px 5px};
   display: none;
 }
 
-.image-preview {
-  margin: 0 0 1rem;
-  flex: 1 0 75%;
-  background-color: #c1c1c1;
-}
 
-.pass-container {
-  margin-left: 10px;
+.options{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .btn-container {
   display: flex;
+  align-self: center;
   flex-direction: row;
 }
 
@@ -179,6 +185,12 @@ input[type="radio"]{margin:0px 5px};
 .send-btn {
   background-color: var(--light-blue);
   color: var(--plain-white);
+  
+}
+
+.send-btn:hover {
+  background-color:  #0022AA;
+  transition: 0.5s;
 }
 
 .reset-btn {
@@ -198,5 +210,41 @@ input[type="radio"]{margin:0px 5px};
 }
 
   @media (min-width: 768px) {
+       .container {
+          width: 70%;
+          margin: 0 auto;
+          margin-top: 27px;
+          margin-bottom: 15px;
+       }
+       
+       .name-section {
+         display: flex;
+         flex-direction: row;
+       }
+
+       .name-section div {
+         width: 50%;
+       }
+
+       .pass-container {
+         display:flex;
+         flex-direction: row;
+       }
+
+       .pass-container div {
+          width: 50%;
+       }
+  }
+
+  
+  @media (min-width: 1200px) {
+    .container {
+       width: 50%;
     
+    }
+
+    .login {
+      width: 40%;
+      margin-top: 40px;
+    }
   }

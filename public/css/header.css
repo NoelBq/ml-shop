@@ -148,6 +148,10 @@ header {
 	display: block;
 }
 
+.header-icon {
+	padding-left: 2px;
+}
+
 /* TABLETS PORTRAIT */
 @media (min-width: 768px) {
 	/*header*/
@@ -189,8 +193,7 @@ header {
 	}
 
 	.menu-options li {
-		padding: 10px 8px 15px 8px;
-		font-size: var(--description-size);
+		padding: 10px 0px 15px 8px;
 	}
 
 	.header-icon {
