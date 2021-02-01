@@ -122,16 +122,17 @@ header {
 	background-color:var(--main-yellow);
 }
 
+
+.menu-options li a:hover {
+	color: #1259c3;
+}
+
 .menu-options-links {
 	color:var(--dark-blue);
 	font-weight: 700;
 	letter-spacing: 0;
 	text-decoration: none;
 	cursor: pointer;
-}
-
-.menu-options-links::hover {
-	color: var(--light-blue);
 }
 
 .burger-close {
@@ -226,15 +227,30 @@ header {
 
 @media (min-width: 1200px) {
 
+	header {
+		font-size: var(--discount-size);
+		font-size: 20px;
+	}
+
 	.topheader {
 		margin-top: 15px;
 		margin-bottom: 0;
 	}
 
-	.topheader span {
-		font-size: var(--description-size);
-	}
 	.search {
-		width: 30%;
+		width: 60%;
+        padding: 10px;
+	}
+
+	.bottomheader {
+		width: 40%;
+	}
+
+	.money-icon {
+		padding-right:10px;
+	}
+
+	.menu-options li {
+		padding: 10px;
 	}
 }

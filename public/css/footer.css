@@ -1,16 +1,16 @@
 :root {
-	--main-yellow: #EAC926;
-	--dark-blue:#03264C;
-	--light-blue:#1259c3;
-	--dark-grey:#666;
-	--light-grey:#ebebeb;
-	--plain-white: white;
-	--green: #39b54a;
-	--body-size: 12px;
-	--heading-size: 12px;
-	--price-size: 18px;
-	--discount-size: 16px;
-	--description-size:16px;
+    --main-yellow: #EAC926;
+    --dark-blue:#03264C;
+    --light-blue:#1259c3;
+    --dark-grey:#666;
+    --light-grey:#ebebeb;
+    --plain-white: white;
+    --green: #39b54a;
+    --body-size: 12px;
+    --heading-size: 12px;
+    --price-size: 18px;
+    --discount-size: 16px;
+    --description-size:16px;
 }
 
 footer {
@@ -43,7 +43,7 @@ footer {
 }
 
 .footer-content article .bottom-content {
-  width:70%;
+    width:70%;
 }
 
 .footer-content h4 {
@@ -69,15 +69,21 @@ footer {
 @media (min-width: 768px) {
     .footer-container {
         flex-direction: row;
-		flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-
+    
     .footer-content {
         flex: 0 30%;
-		box-sizing:border-box;
+        box-sizing:border-box;
     }
-
+    
     .footer-content article .bottom-content {
         width: 80%;
+    }
+}
+
+@media (min-width: 768px) { 
+    .footer-content h4 {
+        font-size: 18px;
     }
 }
